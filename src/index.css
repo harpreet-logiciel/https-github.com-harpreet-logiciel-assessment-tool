@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    @apply text-gray-900 antialiased;
+    background: linear-gradient(to bottom right, #ffffff, #f8fafc);
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background: linear-gradient(to right, #B91C1C, #7f1d1d);
+  }
+
+  .gradient-bg {
+    background: linear-gradient(to right, #B91C1C, #7f1d1d);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(to bottom right, #ffffff, #f8fafc, #f1f5f9);
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
